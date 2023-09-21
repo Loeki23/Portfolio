@@ -1,0 +1,598 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  body{
+    
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Manrope', sans-serif;
+    background-image: ("https://images.pexels.com/photos/175773/pexels-photo-175773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    overflow-x: hidden;
+  }
+
+
+  .title-klaar{
+    display: none;
+  }
+  
+.title-nietklaar{
+  display: flex;
+  margin-top: 20px;
+font-size: 18px;
+}
+
+  header{
+    background-color: #C0BDFC;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+  }
+  .header-img{
+    width: 100%;
+    background-image: url("./img/Mask\ Group\ 97.png");
+    height: 15px;
+    margin-bottom: 15Px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  li{
+    list-style: none;
+  }
+  a{
+    color: #F5F6E7;
+    text-decoration: none;
+    
+  }
+
+  
+  .navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+  z-index: 7;
+    flex-wrap: wrap;
+  
+  }
+  
+  .nav-menu{
+    position: fixed;
+    z-index: 100;
+    left: -100%;
+  top: 80px;
+  gap: 0;
+  flex-direction: column;
+  background-color: #C0BDFC ;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+  height: 100vh;
+  font-family: "capitolina", serif;
+font-weight: 700;
+font-style: italic;
+  font-weight: 700;
+  font-style: normal;
+  
+  }
+
+  
+  .nav-brading{
+    font-size: 2rem;
+   height: 50px;
+   margin-right: 50px;
+   margin-bottom: 10px;
+   color: #C0BDFC;
+  
+  }
+  
+  .nav-link{
+    transition: 0.7s ease;
+  }
+  
+  .nav-link:hover{
+    color: #F9DEC9;
+  }
+  .hamburger{
+    display: none;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    margin-right: 50px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #F5F6E7;
+   
+  }
+  
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+    
+  .nav-item{
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: left;
+  
+    margin-left: 300px;
+  
+    width: 500px;
+    margin-top: 40px;
+  }
+  .nav-menu.active{
+    left: 0;
+  
+    
+  }
+ 
+  .socials{
+    display: flex;
+    justify-content: start;
+  height: 300px;
+    margin-top: 45px;
+    width: 100%;
+   
+  }
+
+.face{
+
+    margin-top: 200px;
+    margin-left: 80px;
+    
+}
+.insta{
+    margin-top: 200px;
+    margin-left: 40px;
+
+}
+.tiktok{
+    margin-top: 200px;
+    margin-left: 40px;
+   
+}
+
+.home{
+
+    background-color: aqua;
+    height: 500px;
+    width: 100%;
+}
+.text-container {
+  text-align: center;
+}
+
+.text {
+  font-size: 24px;
+  font-weight: bold;
+  white-space: wrap;
+  overflow: hidden;
+  border-right: 2px solid white;
+}
+
+/* Blinking cursor animation */
+.text::after {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 22px;
+  background-color: white;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+}
+
+
+.tejbeajbfjea {
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  margin-top: -100px;
+}
+.img-home{
+  position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url("./img/wave_leuk.png");
+    background-size: cover;
+    background-repeat: repeat;
+    animation: animate-background linear 45s infinite ;
+    
+}
+.front-text{
+  width: 100vw;
+margin-top: 270px;
+position: fixed;
+z-index: 0;
+ color: white;
+text-align: center;
+}
+
+.texthaha {
+  background: none;
+}
+
+
+.parallax {
+    /* The image used */
+    background-image: url("./img/Mask\ Group\ 1.png");
+  
+    /* Set a specific height */
+    min-height: 690px; 
+
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+  }
+  @keyframes animate-background{
+
+    From{ background-position: 0px 0px;}
+    to{ background-position: 1900px 0px;}
+}
+
+
+  .style{
+    height:1000px;
+    background-color:#443C7D;
+    font-size:20px;
+    color: white;
+    display: flex;
+    padding-top: 400px;
+    text-align: center;
+  
+  
+  }
+.mij-links{
+  z-index: 1;
+    width: 100%;
+    height: 560px;
+    position: relative;
+    
+}
+
+.mij-rechts{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 500px;
+
+}
+
+
+
+.title-mij{
+  font-size: 45px;
+  text-align: center;
+}
+.line{
+  width: 400px;
+  margin: auto;
+border: none;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 30px;
+}
+.text-mij{
+  width: 50%;
+
+  height: 150px;
+  margin: auto;
+}
+
+.werk{
+  width: 100%;
+  height: 100vh;
+background-color: #443C7D;
+display: flex;
+font-size: 20px;
+color: white;
+}
+
+.werk-links{
+
+  width: 50%;
+  height: 90vh;
+  margin: auto;
+  display: flex;
+}
+.werk-rechts{
+
+  width: 50%;
+  height: 90vh;
+  margin: auto;
+  justify-content: flex-end;
+}
+
+
+
+.title-werk{
+  font-size: 45px;
+  text-align: center;
+  margin-top: 140px;
+}
+.line{
+  width: 400px;
+  margin: auto;
+border: none;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 30px;
+}
+.text-werk{
+  width: 50%;
+  text-align: center;
+  height: 150px;
+  margin: auto;
+}
+
+
+.buttons{
+
+  height: 200px;
+  width: 470px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.btn{
+  background-color: white;
+  width: 200px;
+  height: 40px;
+  margin: auto;
+  text-align: center;
+  border-radius: 30px;
+  color: #443C7D;
+  padding-top: 8px;
+}
+
+.btn:hover{
+  color: #C0BDFC;
+  cursor: pointer;
+}
+.img-werk{
+
+  display: flex;
+}
+.car{
+  margin: auto;
+
+  width: 90%;
+  height: 600px;
+  margin: auto;
+  margin-top: 140px;
+
+ 
+}
+
+
+
+
+
+.item{
+  background-color: white;;
+  width: 360px;
+  height: 540px;
+  margin: auto;
+
+
+}
+
+.img-car1{
+  background-image: url("./img/abri_loeki_jannink_20mvb.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 360px;
+  height: 540px;
+}
+
+.img-car4{
+  background-image: url("./img/Image 5.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 360px;
+  height: 540px;
+}
+
+.img-car5{
+height: 540px;
+  
+}
+
+.img-car3{
+  padding-top: 40px;
+}
+
+.web1{
+  background-color: red;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.title-web{
+background-color: #C0BDFC;
+width: 100%;
+text-align: center;
+}
+
+.taak_website{
+  margin: auto;
+  border: none;
+}
+
+
+.f1{
+
+  width: 100%;
+  height: 100px;
+}
+
+.f2{
+
+  width: 100%;
+  height: 100px;
+}
+
+
+.f3{
+
+  width: 100%;
+  height: 100px;
+}
+
+
+
+
+.space{
+  height: 100px;
+  width: 100%;
+  background-color: #443C7D;
+}
+
+
+
+footer{
+  height: 100px;
+  width: 100%;
+background-color: #C0BDFC;
+  display: flex;
+  text-align: center;
+  color: white;
+}
+.line2{
+  width: 300px;
+  height: 2px;
+  border: none;
+  background-color: white;
+
+  margin: auto;
+}
+.link-foot{
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 7px;
+}
+h2{
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+@media(max-width: 1180px){
+
+    .nav-item{
+      margin: auto;
+      margin-top: 40px;
+      text-align: center;
+      font-size: 30px;
+    }
+
+.socials{
+    display: flex;
+    margin: auto;
+    
+}
+
+.style{
+
+  height: 1500px;
+  flex-wrap: wrap;
+}
+.mij-links{
+  margin-top: 1px;
+}
+.mij-rechts{
+
+  margin-top: 1px;
+}
+
+
+.werk{
+
+  height: 1500px;
+  flex-wrap: wrap;
+}
+
+.werk-links{
+
+width: 100%;
+}
+.werk-rechts{
+
+  width: 100%;
+}
+footer{
+  height: 400px;
+  flex-wrap: wrap;
+}
+
+
+
+}
+@media(max-width: 611px){
+
+.text-werk{
+  margin-bottom:40px;
+}
+.img-werk{
+  width: 100px;
+  height: 100px;
+}
+
+.ster{
+  height: 100px;
+  width: 100px;
+  margin-top: 100px;
+}
+.ik{
+  height: 400px;
+  width: 330px;
+  margin: auto;
+}
+.front-text{
+
+  width: 100vw;
+
+  display: flex;
+}
+.buttons{
+  width: 100vw;
+}
+}
